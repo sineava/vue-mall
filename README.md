@@ -59,4 +59,4 @@
 
 ---
 
-[我的博客](https://github.com/sineava/vue-mall/edit/master/api接口文档.md)
+[接口API](https://github.com/sineava/vue-mall/edit/master/api接口文档.md)
