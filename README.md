@@ -59,4 +59,4 @@
 
 ---
 
-[接口API](https://github.com/sineava/vue-mall/edit/master/api接口文档.md)
+[接口API](./api接口文档.md)
