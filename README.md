@@ -89,6 +89,32 @@
 - el-button
 - 字体图标
 
+##### 创建git分支
+
+```
+//创建并切换登录分支
+git checkout -b login
+```
+
+##### 路由导航守卫控制访问权限
+
+> 如果用户没有登录,但是直接通过URL访问特定页面,需要重新导航到登录页面
+
+```js
+//为路由对象,添加beforeEach导航守卫
+router.beforeEach((to,from,next) => {
+    //如果用户访问的登录页,直接放行
+    if (to.path === 'login') return next()
+    //从sessionStorage中获取到保存的token值
+    const tokenStr = window.sessionStorage.getItem('token')
+    //如果么有token,强制跳转到登录页
+    if(!tokenStr) return next('/login')
+    next()
+})
+```
+
+
+
 ---
 
 [接口API](./api接口文档.md)
