@@ -122,8 +122,6 @@ router.beforeEach((to,from,next) => {
 })
 ```
 
-
-
 ### 主页布局
 
 #### 通过接口获取菜单数据
@@ -138,6 +136,18 @@ axios.interceptors.request.use(config => {
     return config
 })
 ```
+### 权限管理
+
+#### 权限管理业务分析
+
+> 通过权限管理模块控制不同的用户可以进行哪些操作,具体可以通过角色的方式进行控制,即每个用户分配一个特定的角色,角色包括不同的功能权限
+
+![](./src/assets//mall_desc05.png)
+
+
+
+
+
 ---
 
 [接口API](./api接口文档.md)
