@@ -138,11 +138,6 @@ axios.interceptors.request.use(config => {
     return config
 })
 ```
-
-
-
-
-
 ---
 
 [接口API](./api接口文档.md)
