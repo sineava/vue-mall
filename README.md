@@ -92,16 +92,16 @@
 ##### 创建git分支
 
 ```
-//创建并切换登录分支
+// 创建并切换登录分支
 git checkout -b login
 
-//login分支合并到主分支
-//1.切换到master分支
+// login分支合并到主分支
+// 1.切换到master分支
 git checkout master
-//2.合并分支到master
+// 2.合并分支到master
 git merge login
 
-//将本地login子分支推送到github
+// 将本地login子分支推送到github
 git push -u origin login
 ```
 
