@@ -11,6 +11,12 @@ body,
   display: flex;
   justify-content: flex-end;
 }
+.hi-lightgreen {
+  color: lightgreen;
+}
+.hi-red {
+  color: red;
+}
 .el-breadcrumb {
   margin-bottom: 20px;
   font-size: 12px;
@@ -21,4 +27,7 @@ body,
 .el-table {
   margin: 15px 0;
   font-size: 12px;
+}
+.el-cascader-panel {
+  max-height: 300px;
 }

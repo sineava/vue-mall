@@ -8,6 +8,10 @@ export let passwordValid = [
     { required: true, message: '请输入密码', trigger: 'blur' },
     { min: 6, max: 15, message: '长度在 6 到 15 个字符', trigger: 'blur' }
 ]
+// 分类表单名称验证
+export let catNameValid = [
+    { required: true, message: '请输入分类名称', trigger: 'blur' }
+]
 // 邮箱验证(自定义)
 export let emailValid = [
     { required: true, message: '请输入邮箱', trigger: 'blur' },
