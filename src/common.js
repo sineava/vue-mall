@@ -12,6 +12,10 @@ export let passwordValid = [
 export let catNameValid = [
     { required: true, message: '请输入分类名称', trigger: 'blur' }
 ]
+// 分类参数验证
+export let catPropValid = [
+    { required: true, message: '请输入分类参数', trigger: 'blur' }
+]
 // 邮箱验证(自定义)
 export let emailValid = [
     { required: true, message: '请输入邮箱', trigger: 'blur' },
