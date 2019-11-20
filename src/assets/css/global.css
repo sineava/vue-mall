@@ -31,3 +31,6 @@ body,
 .el-cascader-panel {
   max-height: 300px;
 }
+.ql-editor {
+  min-height: 300px;
+}
