@@ -64,6 +64,7 @@ export default {
         // 使用lodash合并对象
         const result = _.merge(res.data, this.options)
         myChart.setOption(result)
+        console.log(result)
     }
 }
 </script>
