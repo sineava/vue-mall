@@ -3,7 +3,7 @@
         <!-- 头部区域 -->
         <el-header>
             <div>
-                <img src="../assets/heima.png" alt=""/>
+                <img class="avator" src="../assets/avator.png" alt=""/>
                 <span>电商后台管理系统</span>
             </div>
             <el-button type="info" @click="logout">登出</el-button>
@@ -12,7 +12,7 @@
         <el-container>
             <!-- 侧边栏 -->
             <el-aside :width="flag == true ? '64px' : '200px'">
-                <div class="toggle-btn" @click="toggleCollapse">|||</div>
+                <div class="toggle-btn" @click="toggleCollapse">&lt;&gt;</div>
                 <el-menu background-color="#333744" text-color="#fff" active-text-color="#409eff"
                     :collapse-transition="false" :unique-opened='true' :collapse="flag" :default-active="activePath">
                     <!-- 一级菜单 -->
@@ -107,6 +107,7 @@ export default {
         align-items: center;
         > span {
             margin-left: 20px;
+            font-weight: bold;
         }
     }
 }
@@ -131,7 +132,10 @@ export default {
     color: #fff;
     background-color: #4a5064;
     text-align: center;
-    letter-spacing: .2rem;
     cursor: pointer;
+}
+
+.avator {
+    border-radius: 50%;
 }
 </style>

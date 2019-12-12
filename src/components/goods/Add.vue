@@ -137,7 +137,7 @@ export default {
             // 静态属性
             onlyTableData: [],
             // upload url
-            uploadURL: 'http://127.0.0.1:8888/api/private/v1/upload',
+            uploadURL: 'https://renoblog.xyz/api/private/v1/upload',
             // 请求头,携带token
             headerObj: {
                 Authorization: window.sessionStorage.getItem('token')
@@ -145,7 +145,8 @@ export default {
             // 预览图片
             previewPath: '',
             // 图片预览对话框(显示/隐藏)
-            previewVisible: false
+            previewVisible: false,
+            url: 'https://renoblog.xyz/'
         }
     },
     created() {
@@ -191,7 +192,7 @@ export default {
         },
         // 处理图片预览效果
         handlePreview(file) {
-            this.previewPath = file.response.data.url
+            this.previewPath = this.url + file.response.data.tmp_path
             this.previewVisible = true
         },
         // 处理移除图片操作

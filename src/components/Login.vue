@@ -55,6 +55,7 @@ export default {
                 window.sessionStorage.setItem('token', res.data.token)
                 // 2. 通过编程式导航跳转到后台主页,路由地址是/home
                 this.$router.push('/home')
+                console.log('--- hello ---')
             })
         },
         // 重置登录表单

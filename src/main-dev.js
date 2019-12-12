@@ -25,7 +25,7 @@ import 'quill/dist/quill.bubble.css'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.defaults.baseURL = 'http://renoblog.xyz/api/private/v1/'
 // 在request拦截器中显示进度条 NProgress.start()
 axios.interceptors.request.use(config => {
   NProgress.start()
