@@ -12,7 +12,7 @@
     "core-js": "^3.3.2",
     "echarts": "^4.5.0",
     "element-ui": "^2.4.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "nprogress": "^0.2.0",
     "v-viewer": "^1.4.2",
